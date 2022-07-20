@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Archivo", Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    /*background-image: radial-gradient(circle, #ff5811, #fa6a23, #f67933, #f18744, #ec9355);*/
+    background-image: linear-gradient(to right bottom, #ed5107, #e6411d, #dd3129, #d32033, #c70d3a);
+    background-repeat: no-repeat;
+
+  }
+   
+  header {
+    background: #a09692ef;
+    color:#eee;
+    padding: 0.3rem;
+    text-align: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  }
+  
+  h1 {
+    text-align: left;
+    font-family: Helvetica;
+    padding-left: 4rem;
+    color: #4a0c74; 
+  }
+
+  h2, h6 {
+    text-align: center;
+    font-family: 'Titillium Web', sans-serif;
+    padding-bottom: 3px;
+  }
+
+  .container {
+    margin: 0 auto;
+    width: 680px;
+      /*width: 60%;
+    /*height: 60%;*/
+    max-width: 100%;
+    overflow: auto;
+    padding: 3rem 2rem;
+  }
+  
+  #my-form {
+    padding: 2rem;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    margin-bottom: 30px;
+  }
+  
+  #my-form label {
+    display: block;
+    font-weight: 450;
+  }
+
+  #my-form input .date {
+    display: inline-block;
+  }
+  
+  #my-form input[type="text"], [type="number"] {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  } 
+
+  #my-form input[type="date"] {
+    width: 55%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  #my-form input[type="email"], [type="tel"] {
+    width: 49%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+
+  #my-form input[type="file"] {
+    width: 70%; 
+    display: none;     
+ }
+
+  #my-form select {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  } 
+
+  .spancpf {
+    margin-left: 240px;
+    font-size: 14px; 
+    display: block;         
+ }
+
+  label[for=img] {
+    text-align: center;
+    font-size: 12px;
+  }
+
+  #my-form img {    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-width: auto;
+    padding: 4px;
+    margin-bottom: -15px;
+    border-radius: 150px;
+    width: 160px;
+    height: 160px;
+    border: 1px solid #ccc;   
+    cursor: pointer;
+    transition: background .3s;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  } 
+
+  #my-form img:hover{
+    background-color: #cdc2e2;
+    border: 5px solid #340453;
+  }
+  
+  
+  .btn-validar {
+    display: block;
+    width: 80%;
+    padding: 10px 15px;
+    border: 0px;
+    background-image: linear-gradient(to right, #da4919, #ed5107);
+    border-radius: 30px;
+    margin: 5px 0;
+    color: #ffffff;
+    outline: 0;
+    font-size: 16px;    
+    display: grid; 
+    margin: auto; 
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+
+  .btn-validar:hover{
+    background-image: linear-gradient(to right, #f7761b, #FF5811); /*quando clicar no botão muda a cor*/
+  }
+
+  .btn-idade {
+    display: inline-block;
+    width: 35%;
+    padding: 7px 15px;
+    border: 0;
+    background: #ec7c2b;
+    color: #fff;
+    border-radius: 5px;
+    margin: 5px 0;
+    margin-left: 20px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  }
+
+  .btn-idade:hover{
+    background-image: linear-gradient(to right, #f7761b, #FF5811);
+  }
+ 
+  .errorValidar {
+    background: rgb(175, 2, 2);
+    color: #fff;
+    padding: 4px;
+    margin: 5px;
+    text-align: center;
+  }
+
+  .sucessValidar {  
+    background: rgb(99, 233, 139);
+    color: rgb(6, 49, 19);
+    padding: 4px;
+    margin: 5px;
+    text-align: center;
+  }
+
+  .errorAge {
+    background: #d6cecbc4;
+    font-size: 14px; 
+    color: rgb(0, 0, 0);
+    padding: 7px;
+    margin: 5px;
+    top: 20px;
+  }
+
+
+
+  /*RADIO*/
+
+  input[type="radio"] { 
+    display: none; 
+  } 
+    
+  input[type="radio"] + label { 
+    font-weight: 400; 
+    font-size: 14px; 
+  } 
+  
+  input[type="radio"] + label span { 
+    display: inline-block; 
+    width: 18px; 
+    height: 18px; 
+    margin: -2px 10px 0 0; 
+    vertical-align: middle; 
+    cursor: pointer; 
+    -moz-border-radius: 50%; 
+    border-radius: 50%; 
+    border: 3px solid #d1d0d0; 
+  } 
+  
+  input[type="radio"] + label span { 
+    background-color: rgb(255, 251, 251); 
+  } 
+  
+  input[type="radio"]:checked + label { 
+    color: rgb(91, 9, 124); 
+    font-weight: 700; 
+  } 
+  
+  input[type="radio"]:checked + label span { 
+    background-color: #ff8800; 
+    border: 2px solid #aca9a9; 
+    box-shadow: 2px 2px 2px rgba(0,0,0,.1); 
+  } 
+  
+  input[type="radio"] + label span, input[type="radio"]:checked + label span { 
+    -webkit-transition: background-color 0.24s linear; 
+    -o-transition: background-color 0.24s linear; 
+    -moz-transition: background-color 0.24s linear; 
+    transition: background-color 0.24s linear; 
+  }
+
+

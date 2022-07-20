@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Cadastrar Usuário</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500&display=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    
+    <header>
+      <h1>CIGAM DEVs</h1>      
+    </header>    
+
+    <section class="container">
+      <form id="my-form" class="form" action="#" method="post" enctype="multipart/form-data">
+        <h2>Olá!</h2>
+        <h6>* campos obrigatórios</h6>
+        <br><br>
+       
+      
+        <div>                     
+            <img class="imglogin" src="./img/user.jpg" alt="Selecione uma imagem" id="imgPhoto" accept=".jpg,.jpeg,.png"><br>
+            <label for="img">Selecione uma imagem</label> 
+            <input id="fotoPerfil" type="file" accept=".jpg,.jpeg,.png"/>            
+        </div><br>
+
+        <div class="my-form-control-error">
+          <label for="name">Nome Completo *</label>
+          <input type="text" id="name" placeholder="Rosa Vahz de la Motta" maxlength="100"/>
+        </div>
+
+        <div class="my-form-control-error">
+            <label for="apelido">Apelido *</label>
+            <input type="text" id="apelido" placeholder="Zaza02v" maxlength="15"/>
+        </div>
+
+        <div class="my-form-control-error">
+            <label for="cpf">CPF *</label>
+            <input type="text" class="cpf" id="cpf" placeholder="157.000.000-00" name="cpf" 
+            onkeyup="cpfCheck(this)" maxlength="14" onkeydown="javascript: fMasc( this, mCPF );"> 
+            <span class="spancpf" id="cpfResponse"></span>
+        </div>
+
+        <div class="my-form-control-error">
+            <label for="rg">RG *</label>
+            <input type="text" class="rg" id="rg" placeholder="120000000"/>
+        </div>
+
+        <div class="my-form-control-error">
+            <label for="date">Data de nascimento *</label>
+            <input type="date" id="dob" class="date"/>
+            <button type="submit" id="btn-idade" class="btn-idade"> Calcular idade</button>                        
+            <div id="stickyAge" class="msgIdade"></div>    
+        </div>
+        
+        <br>
+
+        <div>
+          <div class="my-form-control-error">
+              <label for="adress">Endereço *</label>
+              <input type="text" name="cep" id="cep" value="" class="mascCEP" size="10" maxlength="8" placeholder="CEP" onblur="pesquisacep(this.value);"/>
+              <input type="text" id="rua" placeholder="Rua, Avenida, Travessa, Estrada Seu Chico" maxlength="100"/>
+          </div>  
+          <div>
+              <input type="number" id="numero" placeholder="Número"/>     
+              <input type="text" id="complemento" placeholder="Complemento. Ex.: apartamento 48, casa A, loja 03" maxlength="100"/>                
+            </div>
+
+          <div>                          
+              <input type="text" name="bairro" id="bairro" size="40" placeholder="Bairro"/>
+              <input type="text" name="cidade" id="cidade" size="40" placeholder="Cidade" />
+          </div> 
+        </div>
+
+        <div class="uf">
+            <select name="uf" id="uf">
+                <option value="">Selecione um estado</option>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+        </div>
+        
+        <br>
+
+        <div>
+            <label for="contact">Contato</label>
+            <input type="email" id="email" name="email" placeholder="Email *" maxlength="60" /> 
+            <input type="tel" name="telefone" id="telefone" maxlength="15" placeholder="Celular com DDD"/>      
+            
+        </div>
+
+        <br>
+      
+        <div>
+            <label for="disp">Qual rede social você mais usa?</label>           
+                <input id="inst" name="radio" value="inst" checked="checked" type="radio"/>                
+                <label for="inst"> <span></span> Instagram </label>             
+                <input id="fac" name="radio" value="fac" type="radio"/>                
+                <label for="fac"> <span></span> Facebook </label>             
+                <input id="twi" name="radio" value="twi" type="radio"/>                
+                <label for="twi"> <span></span> Twitter  </label>             
+                <input id="lin" name="radio" value="lin" type="radio"/>                
+                <label for="lin"> <span></span> Linkedin </label>            
+        </div>
+
+        <br><br>
+
+            <button id="btn-validar" class="btn-validar" type="submit" value="validar" onclick="validarCampos();">Validar</button>  
+            <div class="msgValidar"></div>
+      </form>    
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
