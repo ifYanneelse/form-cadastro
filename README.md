@@ -12,18 +12,16 @@ Responsive registration Form and Javascript validation | HTML, CSS, Javascript |
 ### Screen
 
 <p align="center" width="100%">
-<img width="50%" src="">
-  
-  
-<img width="30%" src="">  
+
+<img width="50%" src="Screen/1 hello.png">  
 
   <br>
   
-<img width="60%" src=""> 
+<img width="50%" src="https://github.com/ifYanneelse/form-cadastro/blob/6951121bf7add9e64e2af2f2df7a64e30b65eef3/Screen/2%20adress.png"> 
   
    <br>  
   
-<img width="60%" src="">
+<img width="50%" src="Screen/3 validation.png">
   
 </p>
 
