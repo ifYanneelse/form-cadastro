@@ -1,12 +1,11 @@
 # form-cadastro
-Responsive registration Form and Javascript validation | HTML, CSS, Javascript | Front-End de um cadastro | CIGAM DEVs ⏳
-
+Responsive registration Form and Javascript validation | HTML, CSS, Javascript | Front-End de um cadastro
 
 ### Funcionalidades:
 - [x] Cadastro de pessoas
 - [x] Cadastro imagem de perfil
 - [x] Calcular idade
-- [x] Cadastro de endereço
+- [x] Cadastro de endereço (com autocomplete de endereço pelo CEP)
 - [x] Validação dos campos obrigatórios
 
 ### Screen
