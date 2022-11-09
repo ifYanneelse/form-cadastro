@@ -1,5 +1,7 @@
 # form-cadastro
 Responsive registration Form and Javascript validation | HTML, CSS, Javascript | Front-End de um cadastro
+<br>
+https://ifyanneelse.github.io/form-cadastro
 
 ### Funcionalidades:
 - [x] Cadastro de pessoas
@@ -8,7 +10,7 @@ Responsive registration Form and Javascript validation | HTML, CSS, Javascript |
 - [x] Cadastro de endereço (com autocomplete de endereço pelo CEP)
 - [x] Validação dos campos obrigatórios
 
-### Screen
+### 🎨 Screen
 
 <p align="center" width="100%">
 
@@ -24,9 +26,23 @@ Responsive registration Form and Javascript validation | HTML, CSS, Javascript |
   
 </p>
 
-### Ferramentas utilizadas
-- Visual Studio Code
 
+### 🛠 Técnicas e ferramentas utilizadas
+- IDE: Visual Studio Code
+
+    ##### Front-end: 
+    - HTML5
+    - CSS 
+    - Javascript
+    
+    ##### Back-end: 
+    - Javascript
+
+- API de WebService de consulta de cep (ViaCEP)
+
+### 🚀 Como funciona:
+      Abrir por: index.html
+      
 #
 
 ##### :orange_circle: Cigam DEVs
